@@ -10,7 +10,7 @@ def change_pitch(y, sr, semitone_steps):
     return y_changed_pitch
 
 # 음성 파일 로드
-file_path = "수박3-1.wav"
+file_path = "./dataset/3-1.wav"
 y, sr = librosa.load(file_path)
 
 # 주파수 변형을 통한 음성의 피치 변경
@@ -38,6 +38,6 @@ plt.tight_layout()
 plt.show()
 
 # 피치 변경된 음성을 파일로 저장 (soundfile 사용)
-output_wav_path = "output_pitch_changed.wav"
-sf.write(output_wav_path, y_changed_pitch, sr)
-print(f"Pitch changed audio saved to: {output_wav_path}")
+# output_wav_path = "./dataset/output_pitch_changed.wav"
+# sf.write(output_wav_path, y_changed_pitch, sr)
+# print(f"Pitch changed audio saved to: {output_wav_path}")

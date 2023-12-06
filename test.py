@@ -26,15 +26,15 @@ def process_audio(file_path, target_length=100):
 
 
 # 사용 예시
-file_path = "수박3-1.wav"
+file_path = "./dataset/3-1.wav"
 target_length = 200
 
 process_ui(file_path, target_length)
 
-file_path = "수박4-1.wav"
+file_path = "./dataset/4-1.wav"
 
 process_ui(file_path, target_length)
 
-file_path = "수박5-1.wav"
+file_path = "./dataset/5-1.wav"
 
 process_ui(file_path, target_length)
