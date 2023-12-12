@@ -33,10 +33,10 @@ for wav_file in wav_files:
 
 
     # 원본 음성 데이터 시각화 (파랑색)
-    
+    '''
     plt.figure(figsize=(16, 10))
     
-    '''
+    
     plt.subplot(7, 1, 1)
     librosa.display.waveshow(audio, sr=sr, color='blue', alpha=0.8, label='Original Audio')
     plt.title('Original Audio')
