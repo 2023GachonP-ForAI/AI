@@ -6,5 +6,7 @@ print(all_files)
 
 for wav_file in all_files:
 	if "t" in wav_file or "p" in wav_file or "s" in wav_file:
+		if ".ipynb_checkpoints" in wav_file:
+			continue
 		print("delete: ", wav_file)
 		os.unlink('dataset/' + wav_file)

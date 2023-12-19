@@ -82,7 +82,7 @@ for wav_file in wav_files:
    
 
     # 시간 쉬프트 1
-    shift_factor = 500
+    shift_factor = -3000
     time_shifted_audio = time_shift(audio, shift_factor)
     time_shifted_path = file_path[:-4]+"-t1.wav" # 주파수 변조된 파일 추출
     sf.write(time_shifted_path, time_shifted_audio, sr)
@@ -118,7 +118,7 @@ for wav_file in wav_files:
    
 
     # 시간 쉬프트 3
-    shift_factor = 1500
+    shift_factor = 5000
     time_shifted_audio = time_shift(audio, shift_factor)
     time_shifted_path = file_path[:-4]+"-t3.wav" # 주파수 변조된 파일 추출
     sf.write(time_shifted_path, time_shifted_audio, sr)
@@ -137,7 +137,7 @@ for wav_file in wav_files:
     
 
     # 스케일링 1
-    scaling_factor = 2.0  #
+    scaling_factor = 1.5  #
     scaling_audio = audio * scaling_factor
     scaling_path = file_path[:-4]+"-s1.wav"
     sf.write(scaling_path, scaling_audio, sr)
